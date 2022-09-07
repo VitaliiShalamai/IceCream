@@ -1,18 +1,19 @@
-// .container {
-//     padding: 0 0px;
-//     margin: 0 auto;
-//     width: 100%;
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-//     @include mobile {
-//         width: 480px;
-//     }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-//     @include tab {
-//         width: 768px;
-//     }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
-//     @include desk {
-//         width: 1268px;
-//     }
-// }
-
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}

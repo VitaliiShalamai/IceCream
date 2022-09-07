@@ -1,9 +1,10 @@
+@import './base/common';
 @import './base/modern-normalize';
 @import './base/reset';
 
 @import './utils/container';
 @import './utils/mixin';
-@import './utils/title-hiddem';
+@import './utils/visually-hidden';
 @import './utils/variables';
 
 @import './components/button';
@@ -13,7 +14,7 @@
 @import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
-@import './layout/gallary';
+@import './layout/gallery';
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';

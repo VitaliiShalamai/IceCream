@@ -1,0 +1,30 @@
+.advantage__item {
+    position: relative;
+    padding-top: 150px;
+}
+
+.adv1::before,
+.adv2::before,
+.adv3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 50px;
+    
+}
+
+.adv1::before {
+    background-image: url("../images/icon-1.png");
+}
+
+.adv2::before {
+    background-image: url("../images/icon-2.png");
+}
+
+.adv3::before {
+    background-image: url("../images/icon-3.png");
+}
+

@@ -1,6 +1,56 @@
-.header {
-  padding: 30px;
-  background-color: tomato;
+.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 108px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background: $accent-clr;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.logo__text {
+  font-family: 'Titan One', cursive;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-clr;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 110px;
+  margin-left: 110px;
+}
+
+.nav__item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $accent-clr;
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.btn__icon {
+  margin-left: 12px;
 }
 
 // .example .background {

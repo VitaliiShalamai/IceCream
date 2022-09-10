@@ -1,0 +1,121 @@
+.hero-page {
+    position: relative;
+    display: flex;
+    height: 665px;
+    background-color: $product-1;
+}
+
+.milk-box {
+    padding-top: 171px;
+}
+
+.hero-title {
+    font-family: 'Titan One', cursive;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $white-clr;
+}
+
+.hero-title__item {
+    font-family: 'Titan One', cursive;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-clr;
+}
+
+.btn-list {
+    display: flex;
+}
+
+.btn-list__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.hero-btn {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 8px;
+    line-height: 10px;
+    color: $accent-clr;
+    height: 24px;
+    padding: 9px 14px;
+    border-radius: 20px;
+    border: $white-clr;
+}
+
+.milk {
+    display: flex;
+    align-items: flex-end;
+}
+
+.milk__item {
+    padding-bottom: 6px;
+}
+
+.milk__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $white-clr;
+}
+
+.milk-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: $white-clr;
+}
+
+.milk__icon {
+    fill: $accent-clr;
+}
+
+.icecream-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 52px;
+}
+
+.icecream {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.shops-box {
+    padding-top: 156px;
+    margin-left: 78px;
+}
+
+.shop__amount {
+    font-family: 'Titan One', cursive;
+    font-size: 46px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-clr;
+}
+
+.shop-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white-clr;
+}
+
+.girl {
+    position: absolute;
+    right: 109px;
+    bottom: 0;
+}

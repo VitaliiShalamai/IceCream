@@ -80,9 +80,49 @@
 .contact__list {
     display: flex;
     justify-content: center;
+    margin-bottom: 86px;
     
 }
 
 .card:not(:last-child) {
     margin-right: 30px;
+}
+
+.location__button {
+    display: flex;
+    width: 198px;   
+    border-radius: 22px;
+    height: 44px;
+    font-weight: 700;
+    line-height: 1.31;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    fill: #FFFFFF; 
+    background: #D41342;
+    padding: 0;
+}
+
+.location__btn {
+    width: 180px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    font-weight: 700;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #D41443;
+}
+
+.contact__button {
+    display: flex;
+    justify-content: center;
+}
+
+.location:not(:last-child) {
+    margin-right: 14px;
 }

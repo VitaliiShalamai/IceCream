@@ -1,0 +1,60 @@
+.footer-page{
+    position: relative;
+    background-color: $main-back;
+    padding-top: 50px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        width: 100%;
+        height: 1px;
+        background: $border-clr;
+    }
+}
+
+.footer-box__text {
+    font-family: 'Titan One', cursive;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $pink-clr;
+}
+
+.footer-box__span {
+    font-family: 'Titan One', cursive;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-clr;
+}
+
+.network__list {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.network__item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.phone {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: $main-clr;
+}
+
+.phone__number {
+    color: $accent-clr;
+}
+
+.copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

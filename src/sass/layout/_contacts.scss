@@ -98,9 +98,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: #FFFFFF;
-    fill: #FFFFFF; 
-    background: #D41342;
+    color: #D41443;
+    background: #FFFFFF;
     padding: 0;
 }
 
@@ -121,6 +120,7 @@
 .contact__button {
     display: flex;
     justify-content: center;
+    margin-bottom: 165px;
 }
 
 .location:not(:last-child) {

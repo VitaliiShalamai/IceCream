@@ -1,3 +1,9 @@
+.advantage-page {
+    padding-top: 39px;
+    padding-bottom: 139px;
+    background: #FFF5F6;
+}
+
 .advantage__item {
     position: relative;
     padding-top: 90px;
@@ -37,9 +43,7 @@
 
 .advantage__list {
     display: flex;
-    margin-bottom: 139px;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .advantage__value {

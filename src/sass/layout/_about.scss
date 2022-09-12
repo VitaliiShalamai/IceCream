@@ -5,7 +5,7 @@
 .about-page {
     background: #FFF5F6;
     background-image: url("/src/images/spray.png");
-    background-position: center;
+    background-position: 0 302px;
     background-repeat: no-repeat;
 }
 
@@ -47,6 +47,7 @@
 
 .block__item {
     margin-left: 74px;
+    padding-bottom: 30px;
 }
 
 .block__paragraph {

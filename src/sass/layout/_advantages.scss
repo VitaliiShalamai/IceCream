@@ -7,7 +7,7 @@
     margin-right: 30px;
 }
 
-.adv1::before,
+.advan::before,
 .adv2::before,
 .adv3::before {
     content: "";
@@ -17,28 +17,29 @@
     background-repeat: no-repeat;
 }
 
-.adv1::before {
-    background-image: url("../images/icon-1.png");
+.advan::before {
+    background-image: url('/src/images/icon-1.png');
     width: 33px;
     height: 50px;
 }
 
 .adv2::before {
-    background-image: url("../images/icon-3.png");
+    background-image: url('/src/images/icon-2.png');
     width: 50px;
     height: 50px;
 }
 
 .adv3::before {
-    background-image: url("../images/icon-2.png");
-    width: 44px;
+    background-image: url('/src/images/icon-3.png');
+    width: 50px;
     height: 50px;
 }
 
-.advantage__list { 
+.advantage__list {
     display: flex;
-    margin-bottom: 139px; 
-    justify-content: center;  
+    margin-bottom: 139px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .advantage__value {

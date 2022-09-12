@@ -1,0 +1,94 @@
+.about {
+    
+}
+
+.about-page {
+    background: #FFF5F6;
+}
+
+.about-box {
+    padding-top: 125px;
+}
+
+.about-label {
+    margin-bottom: 15px;
+    height: 34px;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFA5BA;
+}
+
+.about-title {
+    font-family: 'Titan One';
+    height: 66px;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #D41443;
+
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
+
+    background-image: url("/src/images/spray.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.block__item {
+    margin-left: 74px;
+}
+
+.block__paragraph {
+    width: 463px;
+    height: 79px;
+    margin-bottom: 35px;
+    line-height: 1.76;
+    color: #000000;
+}
+
+.block__text {
+    width: 463px;
+    font-size: 14px;
+    line-height: 1.94;
+    color: #907E82;
+    margin-bottom: 20px;
+}
+
+.block__line {
+    margin-bottom: 45px;
+    font-size: 14px;
+    line-height: 1.94;
+    color: #907E82;
+}
+
+.block__button {
+    width: 176px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    color: #D41443;
+
+}
+

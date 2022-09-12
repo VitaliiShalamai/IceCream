@@ -93,12 +93,37 @@
     z-index: 0;
 }
 
-.shops-box {
+.shop {
     padding-top: 156px;
     margin-left: 78px;
 }
 
+.shop__icon {
+    position: absolute;
+    right: 0;
+}
+
+.shop__item {
+    position: relative;
+    display: block;
+    width: 77px;
+    height: 77px;
+}
+
+.shop__item:not(:last-child) {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.shop__item-second {
+    width: 92px;
+    height: 76px;
+}
+
 .shop__amount {
+    position: absolute;
+    top: 4px;
+    right: 18px;
     font-family: 'Titan One', cursive;
     font-size: 46px;
     line-height: 1.15;
@@ -108,10 +133,19 @@
 }
 
 .shop__text {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: $white-clr;
+}
+
+.shop_text-second {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .girl {

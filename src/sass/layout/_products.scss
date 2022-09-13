@@ -23,6 +23,8 @@
     display: flex;
     padding-top: 250px;
     padding-bottom: 50px;
+    padding-left: 94px;
+    padding-right: 94px;
 }
 
 .product__item {
@@ -34,13 +36,15 @@
     }
 }
 
-.product-1 {
+.product-1,
+.product-2,
+.product-3 {
     position: relative;
     background-color: $product-1;
     &::before {
         content: " ";
         position: absolute;
-        left: 40px;
+        left: 0;
         top: -224px;
         width: 335px;
         height: 335px;
@@ -49,29 +53,15 @@
 }
 
 .product-2 {
-    position: relative;
     background-color: $product-2;
     &::before {
-        content: " ";
-        position: absolute;
-        left: 40px;
-        top: -224px;
-        width: 335px;
-        height: 335px;
         background-image: url(/src/images/home-pic2.png);
     }
 }
 
 .product-3 {
-    position: relative;
     background-color: $product-3;
     &::before {
-        content: " ";
-        position: absolute;
-        left: 40px;
-        top: -224px;
-        width: 335px;
-        height: 335px;
         background-image: url(/src/images/home-pic3.png);
     }
 }

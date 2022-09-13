@@ -1,20 +1,15 @@
 .contact-page {
-    padding-top: 132px;
-    padding-bottom: 160px;
-    
-
-
-    background: #FFF5F6;
-    background-image: linear-gradient(
-        to top,
-        $main-back 77%,
-        $white-clr 77%),
+    position: relative;
+    background-image:
+    linear-gradient(to top, $main-back 86%, $white-clr 86%);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.contact {
-    background-image: url("/src/images/spot.png");
-    background-position: left 115px;
-    background-repeat: no-repeat;
+.spot {
+    position: absolute;
+    left: 0;
+    top: 88px;
 }
 
 .card {
@@ -45,7 +40,7 @@
     border-radius: 6px;
     margin-bottom: 32px;
 
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 .card__city {
@@ -100,7 +95,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 86px;
-    
+
 }
 
 .card:not(:last-child) {
@@ -109,7 +104,7 @@
 
 .location__button {
     display: flex;
-    width: 198px;   
+    width: 198px;
     border-radius: 22px;
     height: 44px;
     font-weight: 700;

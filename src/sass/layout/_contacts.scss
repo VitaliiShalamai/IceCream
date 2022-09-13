@@ -1,3 +1,22 @@
+.contact-page {
+    padding-top: 132px;
+    padding-bottom: 160px;
+    
+
+
+    background: #FFF5F6;
+    background-image: linear-gradient(
+        to top,
+        $main-back 77%,
+        $white-clr 77%),
+}
+
+.contact {
+    background-image: url("/src/images/spot.png");
+    background-position: left 115px;
+    background-repeat: no-repeat;
+}
+
 .card {
     width: 330px;
     height: 572px;
@@ -120,7 +139,6 @@
 .contact__button {
     display: flex;
     justify-content: center;
-    margin-bottom: 165px;
 }
 
 .location:not(:last-child) {

@@ -3,13 +3,12 @@
     background-image:
     linear-gradient(to top, $main-back 86%, $white-clr 86%);
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .spot {
     position: absolute;
     left: 0;
-    top: 88px;
+    top: 96px;
 }
 
 .card {
@@ -44,7 +43,6 @@
 }
 
 .card__city {
-    height: 30px;
     font-size: 16px;
     line-height: 1.86;
     margin-bottom: 10px;
@@ -58,15 +56,11 @@
     color: #907E82;
 }
 
-.name__item {
-    height: 30px;
-    line-height: 1.86;
-
-    color: #000000;
+.schedule__day {
+    padding-bottom: 5px;
 }
 
 .schedule__time {
-    height: 30px;
     line-height: 1.86;
     color: #FFA5BA;
 }

@@ -49,7 +49,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: $accent-clr;
+  color: $white-clr;
   &:not(:last-child) {
     margin-right: 35px;
   }
@@ -58,15 +58,6 @@
 .btn__icon {
   margin-left: 12px;
 }
-
-// .example .background {
-//   height: 240px;
-//   // ❗️❗️❗️ The path to images from a SASS file
-//   // is always the same as from the css folder.
-//   background-image: url('../images/logo.png');
-//   background-size: cover;
-//   background-position: center;
-// }
 
 /* MODAL */
 

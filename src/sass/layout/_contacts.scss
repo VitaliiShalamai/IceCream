@@ -11,6 +11,13 @@
     top: 96px;
 }
 
+.contacts-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 86px;
+
+}
+
 .card {
     width: 330px;
     height: 572px;
@@ -44,7 +51,7 @@
 }
 
 .card__title-second {
-    background: #C2E297; 
+    background: #C2E297;
 }
 
 
@@ -55,11 +62,15 @@
     color: #000000;
 }
 
-.card__text {  
+.card__text {
     height: 50px;
     font-size: 16px;
     line-height: 1.83;
     color: #907E82;
+}
+
+.schedule__item:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .schedule__day {
@@ -71,60 +82,28 @@
     color: #FFA5BA;
 }
 
-.schedule__item-list {
-    margin-bottom: 15px;
-}
-
 .card-contact__item {
     line-height: 1.83;
     color: #907E82;
-}
-
-.contact__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 86px;
-
 }
 
 .card:not(:last-child) {
     margin-right: 30px;
 }
 
-.location__button {
-    display: flex;
-    width: 198px;
-    border-radius: 22px;
-    height: 44px;
-    font-weight: 700;
-    line-height: 1.31;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: #D41443;
-    background: #FFFFFF;
-    padding: 0;
-}
-
-.location__btn {
-    width: 180px;
-    height: 44px;
-    background: #FFFFFF;
-    border-radius: 22px;
-    font-weight: 700;
-    line-height: 1.31;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: #D41443;
-}
-
-.contact__button {
+.contacts-btn {
     display: flex;
     justify-content: center;
 }
 
-.location:not(:last-child) {
+.contacts-btn__item:not(:last-child) {
     margin-right: 14px;
+}
+
+.btn-first {
+    width: 198px;
+}
+
+.btn-second {
+    width: 180px;
 }

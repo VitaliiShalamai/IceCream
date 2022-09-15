@@ -5,10 +5,12 @@
 }
 
 .page-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 108px;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -38,11 +40,20 @@
   color: $accent-clr;
 }
 
+.header__nav {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
 .nav {
-  display: flex;
-  align-items: center;
   margin-right: 110px;
   margin-left: 110px;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__item {

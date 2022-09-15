@@ -15,7 +15,19 @@
                 </li>
             </ul>
             <div class="milk">
-                <img src="/src/images/milk.png" alt="milk">
+
+                <picture>
+                    <source srcset="
+                                /src/images/milk-tablet.png"
+                            media="(min-width: 768px) and (max-width: 1279px)">
+                    <source srcset="
+                                /src/images/milk.png"
+                            media="(min-width: 1280px)">
+
+                    <img src="/src/images/milk.png"
+                            alt="milk">
+                </picture>
+
                 <div class="milk__item">
                     <p class="milk__text">
                         Lorem ipsum dolor sit amet, <br>
@@ -33,24 +45,86 @@
         </div>
 
         <div class="hero-box icecream-box">
-            <img src="/src/images/hero-ellipse.png" alt="header-ellipse">
-            <img class="icecream" src="/src/images/hero-icecream.png" alt="hero-icecream">
+
+            <picture>
+                <source srcset="
+                            /src/images/ellipse-mob.png"
+                        media="(max-width: 767px)">
+                <source srcset="
+                            /src/images/ellipse-tablet.png"
+                        media="(min-width: 768px) and (max-width: 1279px)">
+                <source srcset="
+                            /src/images/ellipse-desk.png"
+                        media="(min-width: 1280px)">
+
+                <img src="/src/images/ellipse-mob.png"
+                        alt="ellipse">
+            </picture>
+
+            <picture class="icecream">
+                <source srcset="
+                            /src/images/icecream-mob.png"
+                        media="(max-width: 767px)">
+                <source srcset="
+                            /src/images/icecream-tablet.png"
+                        media="(min-width: 768px) and (max-width: 1279px)">
+                <source srcset="
+                            /src/images/icecream-desk.png"
+                        media="(min-width: 1280px)">
+
+                <img src="/src/images/icecream-mob.png"
+                        alt="icecream">
+            </picture>
+
         </div>
 
         <ul class="shop">
             <li class="shop__item">
-                <img class="shop__icon" src="/src/images/white-ellipse.png" alt="">
+
+                <picture class="shop__icon">
+                    <source srcset="
+                                /src/images/white-ellipse-tablet.png"
+                            media="(min-width: 768px) and (max-width: 1279px)">
+                    <source srcset="
+                                /src/images/white-ellipse.png"
+                            media="(min-width: 1280px)">
+
+                    <img src="/src/images/white-ellipse-tablet.png"
+                            alt="white-ellipse">
+                </picture>
+
                 <span class="shop__amount">16</span>
                 <p class="shop__text">cafes</p>
             </li>
             <li class="shop__item shop__item-second">
-                <img class="shop__icon" src="/src/images/white-ellipse.png" alt="">
+                <picture class="shop__icon">
+                    <source srcset="
+                                /src/images/white-ellipse-tablet.png"
+                            media="(min-width: 768px) and (max-width: 1279px)">
+                    <source srcset="
+                                /src/images/white-ellipse.png"
+                            media="(min-width: 1280px)">
+
+                    <img src="/src/images/white-ellipse-tablet.png"
+                            alt="white-ellipse">
+                </picture>
+
                 <span class="shop__amount">23</span>
                 <p class="shop__text shop_text-second">food trucks</p>
             </li>
         </ul>
 
-        <img class="girl" src="/src/images/girl.png" alt="girl">
+        <picture class="girl">
+            <source srcset="
+                        /src/images/girl-tablet.png"
+                    media="(min-width: 768px) and (max-width: 1279px)">
+            <source srcset="
+                        /src/images/girl.png"
+                    media="(min-width: 1280px)">
+
+            <img src="/src/images/girl-tablet.png"
+                    alt="girl">
+        </picture>
 
     </div>
 </section>

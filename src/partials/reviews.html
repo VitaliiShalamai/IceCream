@@ -1,5 +1,23 @@
 <section class="reviews">
     <div class="container reviews-page">
-        <img class="reviews__img" src="/src/images/slider.png" alt="reviews">
+        <picture>
+            <source srcset="
+                        /src/images/slider-mob.png"
+                    media="(max-width: 767px)">
+            <source srcset="
+                        /src/images/slider-tablet.png"
+                    media="(min-width: 768px) and (max-width: 1279px)">
+            <source srcset="
+                        /src/images/slider.png"
+                    media="(min-width: 1280px)">
+            <img src="/src/images/slider-mob.png" alt="reviews">
+        </picture>
+        <p>
+            Nullam viverra consectetuer. Quisque cursus et, 
+            porttitor risus. Aliquam sem. 
+            In hendrerit nulla quam nunc, 
+            accumsan congue. Lorem ipsum 
+            primis in nibh vel risus.
+        </p>
     </div>
 </section>

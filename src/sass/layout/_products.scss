@@ -48,8 +48,11 @@
         position: absolute;
         left: 0;
         top: -220px;
-        width: 335px;
-        height: 335px;
+        
+        @media screen and (min-width: 1280px) {
+            width: 335px;
+            height: 335px;
+        }
         @media screen and (min-width: 1280px) {
             background-image: url(/src/images/product-1-mob.png);
         }

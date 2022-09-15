@@ -46,8 +46,10 @@
 }
 
 .advantage__list {
-    display: flex;
-    justify-content: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .advantage__value {

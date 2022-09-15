@@ -90,12 +90,10 @@
 }
 
 .icecream-box {
+    display: flex;
+    justify-content: center;
     position: relative;
     padding-top: 52px;
-    @media screen and (min-width: 1280px) {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 .icecream {

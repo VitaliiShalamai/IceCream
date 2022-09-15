@@ -313,9 +313,9 @@ textarea:focus {
   line-height: 18px;
   color: $white-clr;
   &:not(:last-child) {
-    border-top: 1px solid #e18298;
+    border-top: 1px solid $border-menu;
   }
   &:nth-last-child(-n + 2) {
-    border-bottom: 1px solid #e18298;
+    border-bottom: 1px solid $border-menu;
   }
 }

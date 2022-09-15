@@ -92,8 +92,14 @@
 .icecream-box {
     display: flex;
     justify-content: center;
-    position: relative;
-    padding-top: 52px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @media screen and (min-width: 1280px) {
+        position: relative;
+        padding-top: 52px;
+    }
+
 }
 
 .icecream {
@@ -102,8 +108,14 @@
 }
 
 .shop {
-    padding-top: 156px;
-    margin-left: 78px;
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 156px;
+        margin-left: 78px;
+    }
 }
 
 .shop__icon {

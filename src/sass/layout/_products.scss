@@ -20,11 +20,13 @@
 }
 
 .product {
-    display: flex;
     padding-top: 250px;
     padding-bottom: 50px;
     padding-left: 94px;
     padding-right: 94px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .product__item {
@@ -48,21 +50,45 @@
         top: -220px;
         width: 335px;
         height: 335px;
-        background-image: url(/src/images/home-pic1.png);
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-1-mob.png);
+        }
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-1-tablet.png);
+        }
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-1-desk.png);
+        }
     }
 }
 
 .product-2 {
     background-color: $product-2;
     &::before {
-        background-image: url(/src/images/home-pic2.png);
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-2-mob.png);
+        }
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-2-tablet.png);
+        }
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-2-desk.png);
+        }
     }
 }
 
 .product-3 {
     background-color: $product-3;
     &::before {
-        background-image: url(/src/images/home-pic3.png);
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-3-mob.png);
+        }
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-3-tablet.png);
+        }
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/product-3-desk.png);
+        }
     }
 }
 

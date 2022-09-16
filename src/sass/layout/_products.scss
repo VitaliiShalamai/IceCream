@@ -1,12 +1,12 @@
 .products-label {
-    font-weight: 400;
-    font-size: 30px;
-    padding-top: 50px;
-    line-height: 1.13;
+    font-family: 'Titan One', cursive;
+    font-size: 18px;
+    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $pink-clr;
+    padding-top: 50px;
+    margin-bottom: 15px;
 }
 
 .products-title {
@@ -22,12 +22,15 @@
 .product {
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 31px;
+    @media screen and (max-width: 767px) {
+        padding-top: 144px;
+        padding-bottom: 98px;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
     }
     @media screen and (min-width: 1280px) {
-        padding-top: 250px;
+        padding-top: 260px;
         padding-bottom: 50px;
         padding-left: 94px;
         padding-right: 94px;
@@ -37,6 +40,11 @@
 .product__item {
     text-align: center;
     border-radius: 24px;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 130px;
+        }
+    }
     @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 3);
         &:not(:last-child) {
@@ -53,20 +61,24 @@
     &::before {
         content: " ";
         position: absolute;
-        left: 0;
-        top: -220px;
 
-        @media screen and (min-width: 1280px) {
-            width: 335px;
-            height: 335px;
-        }
-        @media screen and (min-width: 1280px) {
+        left: 50%;
+        transform: translateX(-50%);
+        @media screen and (max-width: 767px) {
+            top: -23%;
+            width: 250px;
+            height: 252px;
             background-image: url(/src/images/product-1-mob.png);
         }
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 768px) {
+            width: 220px;
+            height: 224px;
             background-image: url(/src/images/product-1-tablet.png);
         }
         @media screen and (min-width: 1280px) {
+            top: -40%;
+            width: 335px;
+            height: 335px;
             background-image: url(/src/images/product-1-desk.png);
         }
     }
@@ -75,10 +87,10 @@
 .product-2 {
     background-color: $product-2;
     &::before {
-        @media screen and (min-width: 1280px) {
+        @media screen and (max-width: 767px) {
             background-image: url(/src/images/product-2-mob.png);
         }
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 768px) {
             background-image: url(/src/images/product-2-tablet.png);
         }
         @media screen and (min-width: 1280px) {
@@ -90,10 +102,10 @@
 .product-3 {
     background-color: $product-3;
     &::before {
-        @media screen and (min-width: 1280px) {
+        @media screen and (max-width: 767px) {
             background-image: url(/src/images/product-3-mob.png);
         }
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: 768px) {
             background-image: url(/src/images/product-3-tablet.png);
         }
         @media screen and (min-width: 1280px) {
@@ -125,7 +137,12 @@
 .product-box {
     position: relative;
     padding-top: 163px;
-    height: 525px;
+    @media screen and (max-width: 767px) {
+        height: 485px;
+    }
+    @media screen and (min-width: 768px) {
+        height: 525px;
+    }
 }
 
 .product__text {
@@ -142,11 +159,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 62px;
     margin-left: auto;
     margin-right: auto;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: $white-clr;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 50px;
+        margin-top: 60px;
+    }
 }

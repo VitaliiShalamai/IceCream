@@ -2,9 +2,9 @@
     background: $main-back;
     @media screen and (max-width: 767px) {
         background-image: url("/src/images/spray-mob.png");
-        background-position: bottom;
+        background-position: 0px  753px;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain; 
     }
     @media screen and (min-width: 1280px) {
         background-image: url("/src/images/spray.png");
@@ -53,6 +53,7 @@
         font-size: 34px;
         line-height: 1.14;
         letter-spacing: 0.04em;
+        margin-bottom: 26px;
     }
 
 }
@@ -71,7 +72,7 @@
 }
 
 .production__item {
-    padding: 0 30px;
+   
     @media screen and (max-width: 767px) {
         
     }
@@ -79,12 +80,12 @@
 }
 
 .production__intro {
-    height: 79px;
     margin-bottom: 35px;
     line-height: 1.76;
     color: $main-clr;
 
     @media screen and (max-width: 767px) {
+        padding: 0 15px;
         font-size: 12px;
         line-height: 1.62;
     }
@@ -95,6 +96,13 @@
     line-height: 1.94;
     color: $card-text;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        padding: 0 20px;
+        font-size: 12px;
+        line-height: 1.62;
+        margin-bottom: 15px;
+    }
 }
 
 .production__total {
@@ -102,14 +110,20 @@
     font-size: 14px;
     line-height: 1.94;
     color: $card-text;
+
+    @media screen and (max-width: 767px) {
+        padding: 0 20px;
+        font-size: 12px;
+        line-height: 1.62;
+        margin-bottom: 27px;
+    }
 }
 
 .about-btn {
     width: 176px;
 
     @media screen and (max-width: 767px ) {
-        margin-left: 50px;
-        margin-right: 94px;
+        margin-left: 15px;
 
     }
 }

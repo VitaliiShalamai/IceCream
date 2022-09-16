@@ -16,6 +16,8 @@
 .reviews__text {
     @media screen and (max-width: 767px) {
         text-align: center;
+        width: 153px;
+        margin: auto;
     }
     @media screen and (min-width: 768px) {
         display: none;

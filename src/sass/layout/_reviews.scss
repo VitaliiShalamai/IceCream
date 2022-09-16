@@ -1,8 +1,23 @@
 .reviews-page {
     padding-top: 80px;
     padding-bottom: 50px;
+    @media screen and (max-width: 767px) {
+        padding: 80px 20px 86px 20px;
+    }
 }
 
 .reviews__img img {
     margin: auto;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 29px;
+    }
+}
+
+.reviews__text {
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }

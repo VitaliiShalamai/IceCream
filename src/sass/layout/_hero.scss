@@ -1,9 +1,13 @@
 .hero-page {
     position: relative;
-    height: 665px;
+    height: 502px;
     background-color: $product-1;
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
         display: flex;
+        height: 399px;
+    }
+    @media screen and (min-width: 1280px) {
+        height: 665px;
     }
 }
 
@@ -18,6 +22,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $white-clr;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        left: 20px;
+        bottom: 203px;
+        z-index: 2;
+    }
 }
 
 .hero-title__item {
@@ -30,8 +40,12 @@
 }
 
 .btn-list {
-    @media screen and (min-width: 1280px) {
-        display: flex;
+    display: flex;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        left: 20px;
+        bottom: 160px;
+        z-index: 2;
     }
 }
 
@@ -55,7 +69,8 @@
 }
 
 .milk {
-    @media screen and (min-width: 1280px) {
+    display: none;
+    @media screen and (min-width: 768px) {
         display: flex;
         align-items: flex-end;
     }
@@ -92,14 +107,15 @@
 .icecream-box {
     display: flex;
     justify-content: center;
-    position: absolute;
-    right: 0;
-    top: 0;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
     @media screen and (min-width: 1280px) {
         position: relative;
         padding-top: 52px;
     }
-
 }
 
 .icecream {
@@ -172,4 +188,7 @@
     position: absolute;
     right: 109px;
     bottom: 0;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }

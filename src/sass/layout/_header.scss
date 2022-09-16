@@ -16,6 +16,11 @@
 .logo {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 20px;
+    top: 6px;
+  }
 }
 
 .logo__item {
@@ -71,6 +76,13 @@
 }
 
 /* MODAL */
+
+.header-btn {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -270,6 +282,14 @@ textarea:focus {
   background: var(--accent-color);
 }
 
+.menu-btn {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+  }
+}
+
 .menu-btn,
 .mob-menu__btn {
   border: none;
@@ -278,6 +298,11 @@ textarea:focus {
   margin-left: auto;
   padding: 0;
   fill: $accent-clr;
+}
+
+.menu-btn__icon {
+  width: 20px;
+  height: 12px;
 }
 
 .mob-menu__btn {

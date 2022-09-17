@@ -7,6 +7,9 @@
     color: $pink-clr;
     padding-top: 50px;
     margin-bottom: 15px;
+    @media screen and (min-width: 768px)and (max-width: 1279px) {
+        padding-top: 122px;
+    }
 }
 
 .products-title {
@@ -17,6 +20,9 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent-clr;
+    @media screen and (min-width: 768px)and (max-width: 1279px) {
+        margin-bottom: 150px;
+    }
 }
 
 .product {
@@ -28,6 +34,9 @@
     }
     @media screen and (min-width: 768px) {
         display: flex;
+        padding-left: 34px;
+        padding-right: 34px;
+        padding-bottom: 112px;
     }
     @media screen and (min-width: 1280px) {
         padding-top: 260px;
@@ -46,6 +55,12 @@
         }
     }
     @media screen and (min-width: 768px) {
+        width: calc((100% - 40px) / 3);
+        &:not(:last-child) {
+            margin-right: 20px;
+    }
+    }
+    @media screen and (min-width: 1280px) {
         width: calc((100% - 60px) / 3);
         &:not(:last-child) {
             margin-right: 30px;
@@ -71,8 +86,9 @@
             background-image: url(/src/images/product-1-mob.png);
         }
         @media screen and (min-width: 768px) {
+            top: -21%;
             width: 220px;
-            height: 224px;
+            height: 228px;
             background-image: url(/src/images/product-1-tablet.png);
         }
         @media screen and (min-width: 1280px) {
@@ -114,11 +130,24 @@
     }
 }
 
+.product-box {
+    position: relative;
+    padding-top: 163px;
+
+    @media screen and (max-width: 1279px) {
+        height: 485px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: 525px;
+    }
+}
+
 .product__title {
     position: relative;
     font-family: 'Titan One', cursive;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -127,32 +156,38 @@
         content: " ";
         position: absolute;
         left: 50%;
-        bottom: -32px;
+        bottom: -30px;
+        transform: translateX(-50%);
         width: 26px;
         height: 6px;
         background-image: url(/src/images/three-dots.png);
     }
-}
-
-.product-box {
-    position: relative;
-    padding-top: 163px;
-    @media screen and (max-width: 767px) {
-        height: 485px;
-    }
-    @media screen and (min-width: 768px) {
-        height: 525px;
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 1.13;
+        bottom: -32px;
     }
 }
 
 .product__text {
     padding-top: 70px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.76;
-    text-align: center;
+    font-size: 14px;
+    line-height: 1.52;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: 0.04em;
     color: $white-clr;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.76;
+        width: 198px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        width: 241px;
+    }
 }
 
 .product-btn {
@@ -167,9 +202,6 @@
     border: $white-clr;
     margin-top: 30px;
     margin-bottom: 40px;
-    @media screen and (min-width: 768px) {
-        margin-top: 40px;
-    }
     @media screen and (min-width: 1280px) {
         margin-bottom: 50px;
         margin-top: 60px;

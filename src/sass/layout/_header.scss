@@ -5,7 +5,11 @@
 }
 
 .page-header {
+  position: relative;
   height: 108px;
+  @media screen and (min-width: 768px)and (max-width: 1279px) {
+    padding-top: 37px;
+  }
   @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: center;
@@ -20,6 +24,11 @@
     position: absolute;
     left: 20px;
     top: 6px;
+  }
+  @media screen and (min-width: 768px)and (max-width: 1279px) {
+    position: absolute;
+    left: 33px;
+    top: 36px;
   }
 }
 
@@ -79,8 +88,13 @@
 
 .header-btn {
   display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
+  @media screen and (min-width: 768px)and (max-width: 1279px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
   }
 }
 
@@ -287,6 +301,11 @@ textarea:focus {
     position: absolute;
     top: 23px;
     right: 20px;
+  }
+  @media screen and (min-width: 768px)and (max-width: 1279px) {
+    position: absolute;
+    top: 51px;
+    right: 35px;
   }
 }
 

@@ -1,5 +1,8 @@
 .reviews-page {
-    padding-top: 120px;
+    padding-top: 40px;
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+    }
 }
 
 .review__item {
@@ -34,7 +37,18 @@
         width: 54px;
         height: 40px;
         background-image: url(/src/images/mobile/slider-element.png);
-
+        @media screen and (min-width: 768px) {
+            top: 25px;
+            left: 35px;
+    }
+    }
+    @media screen and (min-width: 768px) {
+        width: 620px;
+        height: 164px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 926px;
+        height: 138px;
     }
 }
 
@@ -42,28 +56,61 @@
     position: relative;
     width: 180px;
     font-size: 12px;
-    line-height: 255%;
+    line-height: 2.55;
     text-align: center;
     color: $main-clr;
-    @media screen and (max-width: 767px) {
         &::after {
         content: "";
         position: absolute;
+        @media screen and (max-width: 767px) {
         top: 28px;
         left: 0;
         width: 180px;
         height: 217px;
-        background-image: url(/src/images/mobile/slider-background.png);
+        background-image: url(/src/images/mobile/slider-background-mob.png);
+        }
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+        top: 27px;
+        left: -32px;
+        width: 524px;
+        height: 62px;
+        background-image: url(/src/images/tablet/slider-background-tablet.png);
+        }
     }
-    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 460px;
+        font-size: 14px;
+        line-height: 2;
+        }
 }
 
 .review__location {
+    position: relative;
     font-size: 14px;
     line-height: 1.86;
     color: $main-clr;
     padding-top: 52px;
     padding-bottom: 64px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 4px;
+        top: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url(/src/images/mobile/red-dots.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 767px) {
+
+
+        }
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        padding-top: 42px;
+    }
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,

@@ -36,11 +36,15 @@
         left: 61px;
         width: 54px;
         height: 40px;
-        background-image: url(/src/images/mobile/slider-element.png);
+        background-image: url(/src/images/mobile/slider-element.svg);
+        background-size: contain;
         @media screen and (min-width: 768px) {
             top: 25px;
             left: 35px;
-    }
+        }
+        @media screen and (min-width: 1280px) {
+            left: 58px;
+        }
     }
     @media screen and (min-width: 768px) {
         width: 620px;
@@ -76,12 +80,23 @@
         height: 62px;
         background-image: url(/src/images/tablet/slider-background-tablet.png);
         }
+        @media screen and (min-width: 1280px) {
+            background-image: url(/src/images/desktop/slider-background-desk.png);
+            width: 814px;
+            height: 31.5px;
+            left: -32px;
+        }
     }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         width: 460px;
         font-size: 14px;
         line-height: 2;
         }
+        @media screen and (min-width: 1280px) {
+        width: 750px;
+        font-size: 16px;
+        line-height: 1.86;
+    }
 }
 
 .review__location {
@@ -102,14 +117,17 @@
         background-image: url(/src/images/mobile/red-dots.svg);
         background-size: contain;
         background-repeat: no-repeat;
-        @media screen and (max-width: 767px) {
-
-
-        }
+        @media screen and (min-width: 1280px) {
+            top: 15px;
+            }
     }
     @media screen and (min-width: 768px) {
         font-size: 16px;
         padding-top: 42px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
+        padding-top: 34px;
     }
 }
 

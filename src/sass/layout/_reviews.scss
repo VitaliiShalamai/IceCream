@@ -1,25 +1,90 @@
 .reviews-page {
-    padding-top: 80px;
-    padding-bottom: 50px;
-    @media screen and (max-width: 767px) {
-        padding: 80px 20px 86px 20px;
-    }
+    padding-top: 120px;
 }
 
-.reviews__img img {
-    margin: auto;
-    @media screen and (max-width: 767px) {
-        margin-bottom: 29px;
-    }
+.review__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.reviews__text {
-    @media screen and (max-width: 767px) {
-        text-align: center;
-        width: 153px;
-        margin: auto;
-    }
+.review__img {
+    padding-bottom: 29px;
     @media screen and (min-width: 768px) {
-        display: none;
+        padding-bottom: 19px;
     }
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 15px;
+    }
+}
+
+.review-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 308px;
+    background-color: $slider-back;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 61px;
+        width: 54px;
+        height: 40px;
+        background-image: url(/src/images/mobile/slider-element.png);
+
+    }
+}
+
+.review__text {
+    position: relative;
+    width: 180px;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    color: $main-clr;
+    @media screen and (max-width: 767px) {
+        &::after {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 0;
+        width: 180px;
+        height: 217px;
+        background-image: url(/src/images/mobile/slider-background.png);
+    }
+    }
+}
+
+.review__location {
+    font-size: 14px;
+    line-height: 1.86;
+    color: $main-clr;
+    padding-top: 52px;
+    padding-bottom: 64px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 22px;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $white-clr;
+    border-radius: 0;
+    margin: 0;
+    background-image: url(/src/images/mobile/home.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }

@@ -18,8 +18,12 @@
 
 .gallery-box--5 img,
 .gallery-box--6 img {
+    transition: transform 500ms;
     @media screen and (min-width: 768px) {
         margin: 5px 20px;
+    }
+    &:hover {
+        transform: scale(2);
     }
 }
 
@@ -32,8 +36,12 @@
 .gallery-box--9,
 .gallery-box--10 {
     margin-bottom: 5px;
+    transition: transform 500ms;
     @media screen and (min-width: 768px) {
         margin: 5px;
+    }
+    &:hover {
+        transform: scale(1.5);
     }
 }
 

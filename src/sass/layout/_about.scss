@@ -6,6 +6,7 @@
         background-repeat: no-repeat;
         background-size: contain; 
     }
+
     @media screen and (min-width: 1280px) {
         background-image: url("/src/images/spray.png");
         background-position: 0 302px;
@@ -15,6 +16,10 @@
 
 .about-box {
     padding-top: 125px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        padding-top: 130px;
+    }
 }
 
 .about-label {
@@ -32,6 +37,12 @@
         height: 21px;
         font-size: 18px;
         line-height: 1.16;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 26px;
+        line-height: 1.15;
+        margin-bottom: 16px;
     }
 }
 
@@ -56,25 +67,47 @@
         margin-bottom: 26px;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 48px;
+        line-height: 1.14;
+    }
+
 }
 
 .production {
     padding: 0 20px;
     @media screen and (min-width: 768px) {
         display: flex;
+        
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        padding-left: 39px;
+        padding-right: 36px;
+        padding-bottom: 27px;
+        margin-top: 44px;  
+    }
+
+    @media screen and (min-width: 1280px) { 
         justify-content: center;
         align-items: center;
     }
 }
 
 .cow-set img {
-    width: 100%;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-right: 17px;
+    }
 }
 
 .production__item {
    
-    @media screen and (max-width: 767px) {
-        
+    @media screen and (min-width: 767px) and (max-width: 1279px) {
+        padding-top: 56px;
     }
     
 }
@@ -88,6 +121,10 @@
         padding: 0 15px;
         font-size: 12px;
         line-height: 1.62;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 12px;
     }
 }
 
@@ -103,6 +140,11 @@
         line-height: 1.62;
         margin-bottom: 15px;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
 }
 
 .production__total {
@@ -116,6 +158,11 @@
         font-size: 12px;
         line-height: 1.62;
         margin-bottom: 27px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 13px;
+        margin-bottom: 62px;
     }
 }
 

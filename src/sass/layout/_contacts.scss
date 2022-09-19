@@ -3,10 +3,6 @@
     background-image:
     linear-gradient(to top, $main-back 86%, $white-clr 86%);
     background-repeat: no-repeat;
-
-    @media screen and (max-width: 767px) {
-        linear-gradient (to top, $main-back 94%, $white-clr 94%);
-    }
 }
 
 .spot {

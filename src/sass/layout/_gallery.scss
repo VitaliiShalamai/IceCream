@@ -18,7 +18,9 @@
 
 .gallery-box--5 img,
 .gallery-box--6 img {
-    margin: 5px 20px;
+    @media screen and (min-width: 768px) {
+        margin: 5px 20px;
+    }
 }
 
 .gallery-box--1,
@@ -29,5 +31,48 @@
 .gallery-box--8,
 .gallery-box--9,
 .gallery-box--10 {
-    margin: 5px;
+    margin-bottom: 5px;
+    @media screen and (min-width: 768px) {
+        margin: 5px;
+    }
+}
+
+.gallery-box--1 img,
+.gallery-box--2 img,
+.gallery-box--3 img,
+.gallery-box--8 img,
+.gallery-box--9 img,
+.gallery-box--10 img {
+    width: 45px;
+    @media screen and (min-width: 768px) {
+        width: 100px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 140px;
+    }
+}
+
+
+.gallery-box--5 img,
+.gallery-box--6 img {
+    width: 55px;
+    margin-bottom: 5px;
+    @media screen and (min-width: 768px) {
+        width: 120px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 180px;
+    }
+}
+
+
+.gallery-box--4 img,
+.gallery-box--7 img {
+    width: 70px;
+    @media screen and (min-width: 768px) {
+        width: 150px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 240px;
+    }
 }

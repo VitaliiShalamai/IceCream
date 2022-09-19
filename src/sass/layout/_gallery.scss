@@ -1,9 +1,28 @@
 .gallery-page {
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
 }
 
-.gallery-set img {
-    @media screen and (min-width: 480px){
-        margin: auto;
-    }
+.gallery-box--1,
+.gallery-box--10,
+.gallery-contaier {
+    display: block;
+}
+
+.gallery-box--5 img,
+.gallery-box--6 img {
+    margin: 5px 20px;
+}
+
+.gallery-box--1,
+.gallery-box--2,
+.gallery-box--3,
+.gallery-box--4,
+.gallery-box--7,
+.gallery-box--8,
+.gallery-box--9,
+.gallery-box--10 {
+    margin: 5px;
 }

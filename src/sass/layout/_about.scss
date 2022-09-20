@@ -102,12 +102,20 @@
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         margin-right: 17px;
     }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 74px;
+    }
 }
 
 .production__item {
    
     @media screen and (min-width: 767px) and (max-width: 1279px) {
         padding-top: 56px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-right: 97px;
     }
     
 }

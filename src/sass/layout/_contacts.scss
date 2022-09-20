@@ -1,7 +1,7 @@
 .contact-page {
     position: relative;
     background-image:
-    linear-gradient(to top, $main-back 86%, $white-clr 86%);
+    linear-gradient(to top, $main-back 81%, $white-clr 81%);
     background-repeat: no-repeat;
     padding-bottom: 93px;
     padding-top: 64px;
@@ -9,28 +9,38 @@
         background-image:
         linear-gradient(to top, $main-back 91%, $white-clr 91%);
     }
-}
 
-.spot {
-    position: absolute;
-    left: 0;
-    top: 96px;
-    display: none;
-    @media screen and (min-width: 1280px) {
-        display: block;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        background-image:
+        linear-gradient(to top, $main-back 83%, $white-clr 83%);
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 158px;
     }
 }
 
-.contacts-list {
+.spot {
+    display: none;
+    @media screen and (min-width: 1280px) {
+    position: absolute;
+    left: 0;
+    top: 168px;
+    display: block;
+    }
+}
+
+.contacts-list {  
+    justify-content: center; 
     @media screen and (max-width: 767px) {
         margin-bottom: 54px;
     }
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: center;
+        margin-bottom: 81px;
     }
 
     @media screen and (min-width: 1280px) {
+        display: flex;
         margin-bottom: 86px;
     }
 }
@@ -50,34 +60,40 @@
         }
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        padding: 50 32 50 31px;
+        width: calc((100% - 40px) / 3);
+        &:not(:last-child) {
+            margin-right: 20px; 
+        }
+    }
+
     @media screen and (min-width: 1280px) {
         width: 330px;
-        height: 572px;
         padding: 51 44 62 43;
+        &:not(:last-child) {
+                margin-right: 30px;
+            }
     }
 }
 
 .card__box:not(:last-child) {
-    
+    border-bottom: 1px solid #E1E1E1;
     @media screen  and (max-width: 767px) {
-        border-bottom: 1px solid #E1E1E1;
         padding-bottom: 25px;
         margin-bottom: 25px;
     }
+
+    @media screen  and (min-width: 768px) and (max-width: 1279px) {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media screen  and (min-width: 1280px) {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    } 
 }
-
-// .card__box {
-//     @media screen  and (min-width: 768px) and (max-width: 1279px) {
-//         padding-bottom: 25px;
-//         margin-bottom: 25px;
-//     }
-
-
-//     @media screen  and (min-width: 1280px) {
-//         padding-bottom: 32px;
-//         margin-bottom: 32px;
-//     } 
-// }
 
 .card__title {
     display: inline-block;
@@ -93,10 +109,13 @@
 
     @media screen and (max-width: 767px) {
         font-size: 12px;
-        line-height: 1.86;
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-bottom: 30px;
     }
 }
 
@@ -115,7 +134,7 @@
         font-size: 12px;
         line-height: 1.86;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
         font-size: 14px;
     }
 }
@@ -129,10 +148,15 @@
         font-size: 10px;
         line-height: 1.80;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 13px;
+        line-height: 1.66;
+    }
 }
 
 .schedule__item:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
     @media screen and (max-width: 767px) {
         margin-bottom: 10px;
@@ -140,9 +164,17 @@
 }
 
 .schedule__day {
-    @media screen and (max-width: 676px) {
+    line-height: 1.86;
+    @media screen and (max-width: 767px) {
         font-size: 12px;
-        line-height: 1.86;
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 1279px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
     }
 }
 
@@ -152,6 +184,14 @@
 
     @media screen and (max-width: 767px) {
         font-size: 12px;
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 1279px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
     }
 }
 
@@ -163,11 +203,9 @@
         font-size: 12px;
         line-height: 1.5; 
     }
-}
 
-.card:not(:last-child) {
-    @media screen and (min-width: 768px) {
-        margin-right: 30px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        font-size: 14px;
     }
 }
 

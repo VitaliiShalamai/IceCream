@@ -1,5 +1,5 @@
 .advantage-page {
-    background: #FFF5F6;
+    background: $main-back;
     @media screen and (max-width: 767px) {
         padding-top: 39px; 
         padding-bottom: 97px;
@@ -87,7 +87,7 @@
     font-weight: 400;
     font-size: 58px;
     line-height: 1.13;
-    color: #D41443;
+    color: $accent-clr;
 
     @media screen and (max-width: 767px) {
         font-size: 36px;
@@ -106,7 +106,7 @@
     line-height: 1.76;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #000000;
+    color: $main-clr;
 
     @media screen and (min-width: 767px)  and (max-width: 1279px) {
         font-size: 14px;

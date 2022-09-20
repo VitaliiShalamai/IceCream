@@ -46,7 +46,7 @@
 }
 
 .card {
-    background: #FFFFFF;
+    background: $white-clr;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
@@ -78,7 +78,7 @@
 }
 
 .card__box:not(:last-child) {
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $border-clr;
     @media screen  and (max-width: 767px) {
         padding-bottom: 25px;
         margin-bottom: 25px;
@@ -101,11 +101,11 @@
     padding-right: 16px;
     line-height: 1.86;
     text-align: center;
-    background: #F0D1A5;
+    background: $product-2;
     border-radius: 6px;
     margin-bottom: 32px;
 
-    color: #FFFFFF;
+    color: $white-clr;
 
     @media screen and (max-width: 767px) {
         font-size: 12px;
@@ -120,7 +120,7 @@
 }
 
 .card__title-second {
-    background: #C2E297;
+    background: $product-3;
 }
 
 
@@ -128,7 +128,7 @@
     font-size: 16px;
     line-height: 1.86;
     margin-bottom: 10px;
-    color: #000000;
+    color: $main-clr;
 
     @media screen  and (max-width: 767px) {
         font-size: 12px;
@@ -142,7 +142,7 @@
 .card__text {
     font-size: 16px;
     line-height: 1.83;
-    color: #907E82;
+    color: $card-text;
 
     @media screen and (max-width: 767px) {
         font-size: 10px;
@@ -180,7 +180,7 @@
 
 .schedule__time {
     line-height: 1.86;
-    color: #FFA5BA;
+    color: $pink-clr;
 
     @media screen and (max-width: 767px) {
         font-size: 12px;
@@ -197,7 +197,7 @@
 
 .card-contact__item {
     line-height: 1.83;
-    color: #907E82;
+    color: $card-text;
 
     @media screen  and (max-width: 767px) {
         font-size: 12px;

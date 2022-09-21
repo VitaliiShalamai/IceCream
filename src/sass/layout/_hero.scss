@@ -104,6 +104,11 @@
         width: 104px;
         height: 40px;
     }
+    &:hover,
+    &:focus {
+        color: $white-clr;
+        background-color: $accent-clr;
+  }
 }
 
 .hero-btn--second {

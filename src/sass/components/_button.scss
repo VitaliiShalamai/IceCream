@@ -10,5 +10,12 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    stroke: $accent-clr;
     border: $white-clr;
+    &:hover,
+    &:focus {
+        stroke: $white-clr;
+        color: $white-clr;
+        background-color: $accent-clr;
+  }
 }
